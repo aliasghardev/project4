@@ -1,0 +1,722 @@
+#header {
+  width: 100%;
+  height: 100px;
+}
+#header > .row {
+  width: 100%;
+  height: 100%;
+  padding: 0 50px;
+}
+#header > .row > img {
+  width: 20%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#header > .row > nav {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#header > .row > nav > ul {
+  display: flex;
+  align-items: center;
+}
+#header > .row > nav > ul:last-of-type > li:last-of-type > a {
+  background-color: #00cb11;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
+#header > .row > nav > ul:last-of-type > li:last-of-type > a:hover {
+  background-color: #39ff49;
+}
+#header > .row > nav > ul > li {
+  padding: 0 20px;
+}
+#header > .row > nav > ul > li > a {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+#header > .row > nav > ul > li > a:hover {
+  color: rgb(86, 86, 86);
+}
+
+.slider {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+}
+.slider > figure {
+  width: 100%;
+  position: absolute;
+  animation: 28s linear infinite alternate;
+}
+.slider > figure:nth-of-type(1) {
+  animation-name: slid1;
+  top: 0;
+  left: 0;
+}
+.slider > figure:nth-of-type(1) > figcaption {
+  background: linear-gradient(90deg, rgba(13, 0, 255, 0.5) 0%, rgba(128, 0, 255, 0.5) 100%, rgba(0, 212, 255, 0.5) 100%);
+  padding: 100px;
+}
+.slider > figure:nth-of-type(1) > figcaption > h1, .slider > figure:nth-of-type(1) > figcaption h2 {
+  font-size: 50px;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  animation: text 3s forwards 1s;
+  opacity: 0;
+}
+.slider > figure:nth-of-type(1) > figcaption > .shadow {
+  animation: text 3s forwards 1s;
+  opacity: 0;
+  position: relative;
+  width: 40%;
+  height: 60px;
+}
+.slider > figure:nth-of-type(1) > figcaption > .shadow > span {
+  position: absolute;
+  font-size: 50px;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: rgb(255, 1, 1);
+  animation: 6s infinite;
+}
+.slider > figure:nth-of-type(1) > figcaption > .shadow > span:nth-of-type(1) {
+  animation-name: shadow1;
+}
+.slider > figure:nth-of-type(1) > figcaption > .shadow > span:nth-of-type(2) {
+  animation-name: shadow2;
+}
+.slider > figure:nth-of-type(1) > figcaption > .shadow > span:nth-of-type(3) {
+  animation-name: shadow3;
+}
+.slider > figure:nth-of-type(1) > figcaption > p {
+  animation: text 3s forwards 1s;
+  opacity: 0;
+  width: 50%;
+  line-height: 50px;
+  margin: 20px 0;
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: rgb(36, 36, 36);
+}
+.slider > figure:nth-of-type(1) > figcaption > .row {
+  animation: text 3s forwards 1s;
+  opacity: 0;
+}
+.slider > figure:nth-of-type(1) > figcaption > .row > a {
+  margin: 50px;
+}
+.slider > figure:nth-of-type(1) > figcaption > .row > a > svg {
+  width: 25px;
+  height: 25px;
+  color: #fff;
+}
+.slider > figure:nth-of-type(1) > figcaption > .row > span {
+  margin: 20px;
+}
+.slider > figure:nth-of-type(1) > figcaption > .row > span > a {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.slider > figure:nth-of-type(1) > figcaption > .row > span:nth-of-type(1) > a {
+  padding: 20px 40px;
+  color: rgba(0, 0, 0, 0.548);
+  background-color: #fff;
+  border: 1px solid white;
+  border-radius: 50px;
+  transition: 0.4s;
+}
+.slider > figure:nth-of-type(1) > figcaption > .row > span:nth-of-type(1) > a:hover {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0);
+}
+.slider > figure:nth-of-type(1) > figcaption > .row > span:nth-of-type(2) > a {
+  color: #fff;
+  padding: 20px 40px;
+  border: 1px solid white;
+  border-radius: 50px;
+  transition: 0.4s;
+}
+.slider > figure:nth-of-type(1) > figcaption > .row > span:nth-of-type(2) > a:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+.slider > figure:nth-of-type(2) {
+  top: 0;
+  left: 100%;
+  animation-name: slid2;
+}
+.slider > figure:nth-of-type(2) > figcaption {
+  padding: 100px 200px;
+  background: linear-gradient(90deg, rgba(217, 117, 12, 0.5) 0%, rgba(220, 80, 38, 0.5) 100%);
+}
+.slider > figure:nth-of-type(2) > figcaption > .music {
+  position: absolute;
+  width: 25%;
+  height: 50%;
+  top: 150px;
+  right: 300px;
+}
+.slider > figure:nth-of-type(2) > figcaption > .music > img {
+  position: absolute;
+}
+.slider > figure:nth-of-type(2) > figcaption > .music > img:nth-of-type(1) {
+  z-index: 1;
+  width: 300px;
+  top: 20px;
+  visibility: hidden;
+  animation: mus1 2s forwards 9s;
+}
+.slider > figure:nth-of-type(2) > figcaption > .music > img:nth-of-type(2) {
+  z-index: 2;
+  width: 300px;
+  top: 30px;
+  transform-origin: top;
+  animation: mus2 3s forwards 7s;
+}
+.slider > figure:nth-of-type(2) > figcaption > .music > img:nth-of-type(3) {
+  z-index: 3;
+  width: 300px;
+  top: 700px;
+  left: 80px;
+  visibility: hidden;
+  animation: mus3 2s forwards 11s;
+}
+.slider > figure:nth-of-type(2) > figcaption > img {
+  animation: text 3s forwards 7s;
+  opacity: 0;
+  width: 200px;
+}
+.slider > figure:nth-of-type(2) > figcaption > h2 {
+  animation: text 3s forwards 7s;
+  opacity: 0;
+  width: 35%;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  margin: 50px 0;
+}
+.slider > figure:nth-of-type(2) > figcaption > p {
+  animation: text 3s forwards 7s;
+  opacity: 0;
+  width: 50%;
+  line-height: 40px;
+  margin: 20px 0;
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: rgb(36, 36, 36);
+}
+.slider > figure:nth-of-type(2) > figcaption > .row {
+  animation: text 3s forwards 7s;
+  opacity: 0;
+}
+.slider > figure:nth-of-type(2) > figcaption > .row > a {
+  margin: 40px;
+}
+.slider > figure:nth-of-type(2) > figcaption > .row > a > svg {
+  width: 25px;
+  height: 25px;
+  color: #fff;
+}
+.slider > figure:nth-of-type(2) > figcaption > .row > span {
+  margin: 20px;
+}
+.slider > figure:nth-of-type(2) > figcaption > .row > span > a {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.slider > figure:nth-of-type(2) > figcaption > .row > span:nth-of-type(1) > a {
+  padding: 20px 40px;
+  color: rgba(0, 0, 0, 0.548);
+  background-color: #fff;
+  border: 1px solid white;
+  border-radius: 50px;
+  transition: 0.4s;
+}
+.slider > figure:nth-of-type(2) > figcaption > .row > span:nth-of-type(1) > a:hover {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0);
+}
+.slider > figure:nth-of-type(2) > figcaption > .row > span:nth-of-type(2) > a {
+  color: #fff;
+  padding: 20px 40px;
+  border: 1px solid white;
+  border-radius: 50px;
+  transition: 0.4s;
+}
+.slider > figure:nth-of-type(2) > figcaption > .row > span:nth-of-type(2) > a:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+.slider > figure:nth-of-type(3) {
+  top: 0;
+  left: 100%;
+  animation-name: slid3;
+}
+.slider > figure:nth-of-type(3) > figcaption {
+  padding: 100px 200px;
+  background-color: rgba(24, 172, 125, 0.4078431373);
+}
+.slider > figure:nth-of-type(3) > figcaption > .ture {
+  position: absolute;
+  width: 40%;
+  height: 70%;
+  right: 100px;
+  top: 100px;
+}
+.slider > figure:nth-of-type(3) > figcaption > .ture > img {
+  position: absolute;
+}
+.slider > figure:nth-of-type(3) > figcaption > .ture > img:first-of-type {
+  bottom: -150px;
+  z-index: 1;
+  visibility: hidden;
+  animation: ture1 2s forwards 15s;
+}
+.slider > figure:nth-of-type(3) > figcaption > .ture > img:last-of-type {
+  bottom: 100px;
+  z-index: 2;
+  left: 30%;
+  visibility: hidden;
+  animation: ture2 2s forwards 18s;
+}
+.slider > figure:nth-of-type(3) > figcaption > img {
+  animation: text 3s forwards 14s;
+  opacity: 0;
+  width: 200px;
+}
+.slider > figure:nth-of-type(3) > figcaption > h2 {
+  animation: text 3s forwards 14s;
+  opacity: 0;
+  width: 35%;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  margin: 50px 0;
+}
+.slider > figure:nth-of-type(3) > figcaption > p {
+  animation: text 3s forwards 14s;
+  opacity: 0;
+  width: 50%;
+  line-height: 40px;
+  margin: 20px 0;
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: rgb(36, 36, 36);
+}
+.slider > figure:nth-of-type(3) > figcaption > .row {
+  animation: text 3s forwards 14s;
+  opacity: 0;
+}
+.slider > figure:nth-of-type(3) > figcaption > .row > a {
+  margin: 40px;
+}
+.slider > figure:nth-of-type(3) > figcaption > .row > a > svg {
+  width: 25px;
+  height: 25px;
+  color: #fff;
+}
+.slider > figure:nth-of-type(3) > figcaption > .row > span {
+  margin: 20px;
+}
+.slider > figure:nth-of-type(3) > figcaption > .row > span > a {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.slider > figure:nth-of-type(3) > figcaption > .row > span:nth-of-type(1) > a {
+  padding: 20px 40px;
+  color: rgba(0, 0, 0, 0.548);
+  background-color: #fff;
+  border: 1px solid white;
+  border-radius: 50px;
+  transition: 0.4s;
+}
+.slider > figure:nth-of-type(3) > figcaption > .row > span:nth-of-type(1) > a:hover {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0);
+}
+.slider > figure:nth-of-type(3) > figcaption > .row > span:nth-of-type(2) > a {
+  color: #fff;
+  padding: 20px 40px;
+  border: 1px solid white;
+  border-radius: 50px;
+  transition: 0.4s;
+}
+.slider > figure:nth-of-type(3) > figcaption > .row > span:nth-of-type(2) > a:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+.slider > figure:nth-of-type(4) {
+  top: 0;
+  left: 100%;
+  animation-name: slid4;
+}
+.slider > figure:nth-of-type(4) > figcaption {
+  padding: 100px 200px;
+}
+.slider > figure:nth-of-type(4) > figcaption > .mail {
+  animation: text 2s forwards 23s;
+  opacity: 0;
+  position: absolute;
+  top: 200px;
+  right: 200px;
+  width: 30%;
+  height: 60%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.slider > figure:nth-of-type(4) > figcaption > .mail > form {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.slider > figure:nth-of-type(4) > figcaption > .mail > form > h5 {
+  font-size: 20px;
+  width: 100%;
+  text-transform: capitalize;
+  margin: 10px 40%;
+}
+.slider > figure:nth-of-type(4) > figcaption > .mail > form > input {
+  width: 95%;
+  margin: 10px;
+  font-size: 20px;
+}
+.slider > figure:nth-of-type(4) > figcaption > .mail > form > input:last-of-type {
+  height: 45%;
+}
+.slider > figure:nth-of-type(4) > figcaption > .mail > form > span {
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+}
+.slider > figure:nth-of-type(4) > figcaption > .mail > form > span > a {
+  color: #ffffff;
+  background-color: #0905ff;
+  padding: 10px 40%;
+  border-radius: 20px;
+  margin: 0 20px;
+}
+.slider > figure:nth-of-type(4) > figcaption > h2 {
+  animation: text 3s forwards 21s;
+  opacity: 0;
+  width: 35%;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  margin: 20px 0;
+}
+.slider > figure:nth-of-type(4) > figcaption > p {
+  animation: text 3s forwards 21s;
+  opacity: 0;
+  width: 50%;
+  line-height: 40px;
+  margin: 50px 0;
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: rgb(36, 36, 36);
+}
+.slider > figure:nth-of-type(4) > figcaption > span {
+  animation: text 3s forwards 21s;
+  opacity: 0;
+}
+.slider > figure:nth-of-type(4) > figcaption > span > a {
+  color: #fff;
+  padding: 20px 40px;
+  border: 1px solid white;
+  border-radius: 50px;
+  transition: 0.4s;
+}
+.slider > figure:nth-of-type(4) > figcaption > span > a:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+.slider > figure > img {
+  width: 100%;
+  height: 90vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.slider > figure > figcaption {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.footer {
+  width: 100%;
+  height: 50vh;
+  margin-top: 50px;
+  background-color: #1f1f1f;
+}
+.footer > .row > div {
+  width: 50%;
+}
+.footer > .row > div:first-of-type {
+  padding: 30px;
+}
+.footer > .row > div:first-of-type * {
+  margin: 20px 0;
+}
+.footer > .row > div:first-of-type > h3 {
+  color: #fff;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.footer > .row > div:first-of-type > img {
+  width: 100px;
+}
+.footer > .row > div:last-of-type > .row {
+  margin: 50px 0;
+  display: flex;
+  align-items: center;
+}
+.footer > .row > div:last-of-type > .row > a > svg {
+  width: 30px;
+  height: 30px;
+  color: #fff;
+}
+.footer > .row > div:last-of-type > .row > h3 {
+  color: #fff;
+  font-size: 20px;
+  text-transform: capitalize;
+  margin-left: 15px;
+}
+
+@keyframes shadow1 {
+  0% {
+    opacity: 1;
+  }
+  32% {
+    opacity: 1;
+  }
+  34% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes shadow2 {
+  0% {
+    opacity: 0;
+  }
+  32% {
+    opacity: 0;
+  }
+  34% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  67% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes shadow3 {
+  0% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  67% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slid1 {
+  0% {
+    left: 0;
+  }
+  22% {
+    left: 0;
+  }
+  28% {
+    left: -100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+@keyframes slid2 {
+  0% {
+    left: 100%;
+  }
+  22% {
+    left: 100%;
+  }
+  28% {
+    left: 0;
+  }
+  47% {
+    left: 0;
+  }
+  53% {
+    left: -100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+@keyframes slid3 {
+  0% {
+    left: 100%;
+  }
+  47% {
+    left: 100%;
+  }
+  53% {
+    left: 0;
+  }
+  72% {
+    left: 0;
+  }
+  78% {
+    left: -100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+@keyframes slid4 {
+  0% {
+    left: 100%;
+  }
+  72% {
+    left: 100%;
+  }
+  78% {
+    left: 0;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes mus1 {
+  0% {
+    visibility: hidden;
+    transform: translateX(0);
+  }
+  47% {
+    visibility: hidden;
+    transform: translateX(0);
+  }
+  50% {
+    visibility: visible;
+    transform: translateX(0);
+  }
+  53% {
+    visibility: visible;
+    transform: translateX(0);
+  }
+  97% {
+    visibility: visible;
+    transform: translateX(150px);
+  }
+  100% {
+    visibility: visible;
+    transform: translateX(150px);
+  }
+}
+@keyframes mus2 {
+  0% {
+    visibility: hidden;
+    transform: rotateX(90deg);
+  }
+  27% {
+    visibility: hidden;
+    transform: rotateX(90deg);
+  }
+  33% {
+    visibility: visible;
+    transform: rotateX(90deg);
+  }
+  60% {
+    visibility: visible;
+    transform: rotateX(-50deg);
+  }
+  90% {
+    visibility: visible;
+    transform: rotateX(0);
+  }
+  100% {
+    visibility: visible;
+    transform: rotateX(0);
+  }
+}
+@keyframes mus3 {
+  0% {
+    visibility: hidden;
+    transform: translateY(0);
+  }
+  50% {
+    visibility: visible;
+    transform: translateY(-750px);
+  }
+  100% {
+    visibility: visible;
+    transform: translateY(-750px);
+  }
+}
+@keyframes ture1 {
+  0% {
+    visibility: hidden;
+    transform: translateY(0);
+  }
+  50% {
+    visibility: visible;
+    transform: translateY(-100px);
+  }
+  100% {
+    visibility: visible;
+    transform: translateY(-100px);
+  }
+}
+@keyframes ture2 {
+  0% {
+    visibility: hidden;
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    visibility: visible;
+    transform: translateX(100px) translateY(100px);
+  }
+  100% {
+    visibility: visible;
+    transform: translateX(100px) translateY(100px);
+  }
+}
+@keyframes text {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=master.css.map */
